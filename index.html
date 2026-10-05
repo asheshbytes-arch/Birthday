@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday D 🤍</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#c4547a;--pink:#f7bfd0;--cream:#fff8f8;--ink:#4d303b;--muted:#805968;--glass:rgba(255,255,255,.72)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff0f5;overflow-x:hidden}
+.screen{display:none;min-height:100vh;position:relative;align-items:center;justify-content:center;padding:44px 20px;overflow:hidden}.screen.active{display:flex;animation:fade .8s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.bg-photo{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(.9);transform:scale(1.03)}.bg-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,18,25,.42),rgba(70,25,45,.55))}
+.hero{position:relative;z-index:2;width:min(900px,100%);text-align:center;color:white;padding:40px 20px}.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;opacity:.85;margin-bottom:18px}.hero h1{font-family:'Great Vibes',cursive;font-size:clamp(68px,12vw,130px);font-weight:400;line-height:.95;text-shadow:0 8px 35px rgba(0,0,0,.25)}.hero h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,46px);font-weight:500;margin-top:14px}.hero p{max-width:580px;margin:18px auto 30px;line-height:1.8;font-size:15px;opacity:.92}
+.btn{border:0;border-radius:999px;padding:14px 25px;font-weight:600;font-size:14px;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-2px) scale(1.02)}.primary{background:white;color:var(--rose);box-shadow:0 12px 35px rgba(0,0,0,.2)}.outline{background:rgba(255,255,255,.14);color:white;border:1px solid rgba(255,255,255,.65)}
+.note{font-size:11px;letter-spacing:1.5px;margin-top:18px;opacity:.8}
+.content{position:relative;z-index:2;width:min(860px,100%)}.section-kicker{text-align:center;text-transform:uppercase;letter-spacing:3px;font-size:11px;color:var(--rose);margin-bottom:10px}.title{font-family:'Playfair Display',serif;text-align:center;font-size:clamp(32px,6vw,58px);font-weight:600;margin-bottom:28px;color:#6a3448}.paper{background:rgba(255,253,250,.92);border:1px solid rgba(196,84,122,.12);border-radius:26px;padding:clamp(26px,5vw,54px);box-shadow:0 25px 70px rgba(100,35,55,.12);position:relative}.paper:before{content:'“';position:absolute;left:24px;top:2px;font:100px/1 'Playfair Display';color:rgba(196,84,122,.12)}.letter{font-family:'Playfair Display',serif;font-size:clamp(16px,2.1vw,19px);line-height:2;color:#563641}.letter p{margin-bottom:18px}.signature{text-align:right;font-family:'Great Vibes',cursive;font-size:34px;color:var(--rose);margin-top:25px}
+.nav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}.soft{background:#fff;color:var(--rose);border:1px solid #edc1cf;box-shadow:0 7px 20px rgba(196,84,122,.08)}
+.memories{background:linear-gradient(145deg,#fff5f8,#f9e8ef)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery figure{margin:0;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(75,35,50,.12)}.gallery img{width:100%;height:250px;object-fit:cover;display:block;transition:.5s}.gallery figure:hover img{transform:scale(1.04)}.gallery figcaption{padding:12px 14px;font-family:'Playfair Display',serif;font-size:14px;color:#744354}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}.quote{background:rgba(255,255,255,.75);border:1px solid #f0cbd6;border-radius:22px;padding:26px;font-family:'Playfair Display',serif;font-style:italic;line-height:1.8}.quote strong{display:block;font-style:normal;color:var(--rose);margin-top:14px;font-family:'DM Sans'}
+.final{background:#24151d;color:#fff}.final .content{text-align:center}.final h2{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(60px,11vw,110px);color:#f7bfd0}.final p{font-family:'Playfair Display',serif;font-size:clamp(17px,2.5vw,23px);line-height:1.9;max-width:720px;margin:22px auto;color:#f8e8ed}.final .small{font-family:'DM Sans';font-size:13px;color:#d9aebc;letter-spacing:1px}.hearts{font-size:28px;letter-spacing:8px;animation:pulse 1.7s infinite}@keyframes pulse{50%{transform:scale(1.08)}}
+.float{position:fixed;inset:0;pointer-events:none;z-index:4;overflow:hidden}.heart{position:absolute;bottom:-30px;animation:rise linear forwards;opacity:.65}@keyframes rise{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}
+@media(max-width:700px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:210px}.split{grid-template-columns:1fr}.screen{padding:30px 14px}.paper{border-radius:20px}.letter{line-height:1.85}}
+@media(max-width:450px){.gallery{grid-template-columns:1fr}.gallery img{height:280px}}
+</style>
+</head>
+<body>
+<div class="float" id="float"></div>
+
+<!-- SCREEN 1: OPEN -->
+<section class="screen active" id="s1">
+  <!-- Main Background Image (WhatsApp Image from GitHub) -->
+  <div class="bg-photo" style="background-image:url('https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/WhatsApp%20Image%202026-10-05%20at%209.17.46%20PM.jpeg')"></div>
+  <div class="hero">
+    <div class="eyebrow">A little something for you</div>
+    <h1>Happy Birthday</h1>
+    <h2>Deepali 🤍</h2>
+    <p>There are some things I couldn't say out loud, so I put them here.</p>
+    <button class="btn primary" onclick="go('s2')">Open Letter 💌</button>
+    <div class="note">Isme koi password ki zarurat nahi hai. Bas open kar do. 🤍</div>
+  </div>
+</section>
+
+<!-- SCREEN 2: LETTER -->
+<section class="screen" id="s2">
+  <div class="content">
+    <div class="section-kicker">a letter for you</div>
+    <h2 class="title">Dear D,</h2>
+    <div class="paper letter">
+      <p><b>Happy Birthday, Baby. ❤️</b></p>
+      <p>I don't know if I should write all this or not, but today is your birthday, and I couldn't just wish you normally and end it there. So I'm writing whatever was in my heart.</p>
+      <p>We haven't talked since 23rd September. In these days, there were so many times when I opened my phone, felt like texting you, and then stopped myself. Shayad kuch cheezein bina bole hi reh jaati hain.</p>
+      <p>You once said that there is affection between us, but not love. Maybe it will take me some time to accept that, because for me, what I felt was never just affection. I genuinely wanted to spend my whole life with you.</p>
+      <p>I never imagined our future as some perfect picture. It was always just you — random calls, silly little fights, annoying each other, then making up, talking for no reason at all. I thought maybe one day, all of this would simply become our normal life.</p>
+      <p>But maybe it wasn't written in our destiny. Maybe you were meant to become a very important part of my life, not necessarily stay in it forever. And you will always be that part of mine.</p>
+      <p>One thing I'll always remember — <b>ab shayad tumhare phone mein Tumhari favourite notification kabhi nahi aayegi.</b> All those Rho 2 wali walks, cooking together, and all those little moments we spent together... these memories mean so much to me.</p>
+      <p>I'm not writing this letter to make you feel guilty, to ask for anything back, or to change your decision. I'm writing it simply because your birthday matters to me. And you matter to me too.</p>
+      <p>I really hope <b>all your dreams come true.</b> Tum jahan bhi raho, jiske saath bhi raho, I hope you are always happy in your own little world. I hope you get everything you wish for, and ab tumko aisa banda mile who truly understands you and keeps you genuinely happy.</p>
+      <p>And if someday you remember me, I hope tumhare face par sadness se zyada smile aaye, remembering all those times jo humne saath mein spend kiye. Because whatever we had, it was real for me. <b>Maybe humari kismat mein bas itna hi saath likha tha, but jitna bhi tha, mere liye bahut special tha.</b> And I'll always be grateful for it.</p>
+      <p><b>Happy Birthday, D.</b> Take care of yourself. 🤍</p>
+      <div class="signature">— A</div>
+    </div>
+    <div class="nav"><button class="btn soft" onclick="go('s3')">Our little memories →</button></div>
+  </div>
+</section>
+
+<!-- SCREEN 3: MEMORIES -->
+<section class="screen memories" id="s3">
+  <div class="content">
+    <div class="section-kicker">some memories i will keep</div>
+    <h2 class="title">Our Little World 🌷</h2>
+    <div class="gallery">
+      <!-- Images from your GitHub repo -->
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/2.jpeg"><figcaption>Some moments just feel like home.</figcaption></figure>
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/3.jpeg"><figcaption>One of those ordinary days I wish lasted longer.</figcaption></figure>
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/4.jpeg"><figcaption>Our little animated world.</figcaption></figure>
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/5.jpeg"><figcaption>Walking through life, side by side.</figcaption></figure>
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/6.jpeg"><figcaption>Another version of us, another memory.</figcaption></figure>
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/7.jpeg"><figcaption>Keep smiling, D. Always.</figcaption></figure>
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/WhatsApp%20Image%202026-10-05%20at%209.17.46%20PM.jpeg"><figcaption>You looked beautiful. You always did.</figcaption></figure>
+      <!-- Repeating a couple of images to fill the 9 slots -->
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/2.jpeg"><figcaption>The little everyday moments mattered too.</figcaption></figure>
+      <figure><img src="https://raw.githubusercontent.com/asheshbytes-arch/Birthday/main/Image/3.jpeg"><figcaption>Some memories don't need words.</figcaption></figure>
+    </div>
+    <div class="split">
+      <div class="quote">“Somewhere between all the random conversations and little moments, you became a very important part of my life.”<strong> </strong></div>
+      <div class="quote">“And maybe that's why letting go feels strange — because I never imagined I would have to.”<strong></strong></div>
+    </div>
+    <div class="nav"><button class="btn soft" onclick="go('s4')">One last thing →</button></div>
+  </div>
+</section>
+
+<!-- SCREEN 4: FINAL -->
+<section class="screen final" id="s4">
+  <div class="content">
+    <div class="section-kicker" style="color:#d99bad">from someone who still cares</div>
+    <h2>Happy Birthday, D 🤍</h2>
+    <div class="hearts">♡ ✦ ♡ ✦ ♡</div>
+    <p>May all your dreams come true.<br>Jahan bhi raho, hamesha khush raho.<br><br>I may not be a part of that world anymore, but I'll always wish good things for you.</p>
+    <p class="small">Thank you for the memories. Thank you for being you.<br>Take care, Deepali. 🌷</p>
+    <div class="nav"><button class="btn outline" onclick="go('s2')">Read the letter again 💌</button></div>
+  </div>
+</section>
+
+<script>
+function go(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  burst();
+}
+function burst(){
+  const box=document.getElementById('float');
+  const symbols=['🤍','🌸','✨','💕','🌷','♡'];
+  for(let i=0;i<10;i++){
+    const e=document.createElement('div'); e.className='heart'; e.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    e.style.left=Math.random()*100+'%'; e.style.fontSize=(14+Math.random()*20)+'px'; e.style.animationDuration=(4+Math.random()*4)+'s'; e.style.animationDelay=(Math.random()*.8)+'s'; box.appendChild(e);
+    setTimeout(()=>e.remove(),8500);
+  }
+}
+setInterval(()=>{if(document.getElementById('s1').classList.contains('active')) burst()},2500);
+</script>
+</body>
+</html>
